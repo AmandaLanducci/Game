@@ -14,11 +14,24 @@
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
+                    <th>Genero</th>
                     <th>Nome</th>
-                    <th>Cor</th>
-                    <th>Sexo</th>
-                    <th></th>
+                    <th>Valor</th>
+                    <th>descrição</th>
+                    <th>data de lançamento</th>
+                    <th>studio</th>
                 </tr>
+                @foreach ($gatos as $gato)
+                <tr>
+                    <td>{{ $gato->nome }}</td>
+                    <td>{{ $gato->cor }}</td>
+                    <td>{{ $gato->sexo }}</td>
+                    <td></td>
+                </tr>
+            @endforeach
+        </table>
+    </div>
+
 
 
             </table>
