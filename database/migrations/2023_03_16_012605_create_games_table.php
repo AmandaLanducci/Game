@@ -17,6 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('genero', 100);
             $table->string('nome', 100);
+            $table->decimal('valor', 8, 2);
+            $table->text('descricao');
+            $table->date('datadelancamento');
+            $table->string('studio', 100);
 
             $table->timestamps();
         });

@@ -15,8 +15,8 @@ class Game extends Model
         'genero',
         'nome',
         'valor',
-        'descrição',
-        'ano',
+        'descricao',
+        'datadelancamento',
         'estudio'
 
 
