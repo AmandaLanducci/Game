@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 // Rota para a listagem de games
 Route::get('/games', [GamesController::class, 'index'])->name('games.index');
+Route::get('/games/novo', [GamesController::class, 'create'])->name('games.create');

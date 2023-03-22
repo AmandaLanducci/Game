@@ -10,23 +10,25 @@
     </head>
     <body>
         <div class="container">
-            <h1>Lista de Gatos</h1>
+            <h1>Lista de Games</h1>
 
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
                     <th>Genero</th>
                     <th>Nome</th>
                     <th>Valor</th>
-                    <th>descrição</th>
-                    <th>data de lançamento</th>
-                    <th>studio</th>
+                    <th>Descrição</th>
+                    <th>Data de lançamento</th>
+                    <th>Studio</th>
                 </tr>
-                @foreach ($gatos as $gato)
+                @foreach ($games as $game)
                 <tr>
-                    <td>{{ $gato->nome }}</td>
-                    <td>{{ $gato->cor }}</td>
-                    <td>{{ $gato->sexo }}</td>
-                    <td></td>
+                    <td>{{ $game->genero }}</td>
+                    <td>{{ $game->nome }}</td>
+                    <td>{{ $game->valor }}</td>
+                    <td>{{ $game->descricao }} </td>
+                    <td>{{ $game->datadelancamento }} </td>
+                    <td>{{ $game->estudio }} </td>
                 </tr>
             @endforeach
         </table>
