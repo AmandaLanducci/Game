@@ -11,7 +11,7 @@
     <body>
         <div class="container">
             <h1>Novo game</h1>
-            <form action="" method="post">
+            <form action={{ route('games.store') }} method="post">
                 @csrf
                 <div>
                     <label>Genero</label>
