@@ -32,30 +32,37 @@ class GamesController extends Controller
         $game->studio = $requisicao->studio;
 
         $game->save();
+        return redirect()->route('game.show', $game->id);
     }
-
-
-    public function show($id)
+    public function show(Game $game)
     {
-        //
+
+        return view('games.view', compact('game'));
     }
 
-
-    public function edit($id)
+  
+    public function edit(Game $game)
     {
-        //
+     
+        return view('games.edit', compact('game'));
     }
 
-
-    public function update(Request $request, $id)
+ 
+    public function update(Request $requisicao, Game $game)
     {
-        //
+      
+        $game->update($requisicao->all());
+
+       
+        return redirect()->route('games.show', $game->id);
     }
 
-
+   
     public function destroy($id)
     {
 
     }
 }
+
+
 
