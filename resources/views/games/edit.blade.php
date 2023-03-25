@@ -39,7 +39,13 @@
                 
                 <div class="mb-3">
                     <label>Data de lançamento</label>
-                    <input type="date" name="datadelancamento" class="form-control" value="{{ $game->datadelancamento}}">
+                    <input type="date" name="datadelancamento" class="form-control" value="{{ $game->datadelancamento }}">
+                </div>
+
+                
+                <div class="mb-3">
+                    <label>Estudio</label>
+                    <input type="string" name="estudio" class="form-control" value="{{ $game->estudio}}">
                 </div>
 
                 <div class="mb-3">
