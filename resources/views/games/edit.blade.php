@@ -49,7 +49,7 @@
                 </div>
 
                 <div>
-                    <input type="submit" value="Atualizar Gato" class="btn btn-primary">
+                    <input type="submit" value="Atualizar game" class="btn btn-primary">
                 </div>
             </form>
         </div>
