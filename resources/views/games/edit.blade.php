@@ -48,25 +48,6 @@
                     <input type="string" name="estudio" class="form-control" value="{{ $game->estudio}}">
                 </div>
 
-                <div class="mb-3">
-                    <label>Sexo</label>
-                    <select name="sexo" class="form-control">
-                        <option value="M" {{ $gato->sexo == 'M' ? 'selected' : '' }}>Menino</option>
-                        <option value="F" {{ $gato->sexo == 'F' ? 'selected' : '' }}>Menina</option>
-                        <option value="E" {{ $gato->sexo == 'E' ? 'selected' : '' }}>Menine</option>
-                    </select>
-                </div>
-
-                <div class="mb-3">
-                    <label>Cor</label>
-                    <input type="text" name="cor" class="form-control" value="{{ $gato->cor }}">
-                </div>
-
-                <div class="mb-3">
-                    <label>Gatografia</label>
-                    <textarea name="gatografia" id="" rows="5" class="form-control">{{ $gato->gatografia }}</textarea>
-                </div>
-
                 <div>
                     <input type="submit" value="Atualizar Gato" class="btn btn-primary">
                 </div>

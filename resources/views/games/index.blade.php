@@ -31,10 +31,7 @@
                     <td>{{ $game->descricao }} </td>
                     <td>{{ $game->datadelancamento }} </td>
                     <td>{{ $game->estudio }} </td>
-                    <td>
-                        <a class="link" href="{{ route('games.show', $game->id) }}">
-                            Ver
-                        </a>
+                   
                 </tr>
             @endforeach
         </table>
